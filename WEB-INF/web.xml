@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	
+	<servlet>
+		<servlet-name>Insert</servlet-name>
+		<servlet-class>Insert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Search</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddBook</servlet-name>
+		<servlet-class>AddBook</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteBook</servlet-name>
+		<servlet-class>DeleteBook</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateBook</servlet-name>
+		<servlet-class>UpdateBook</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchBook</servlet-name>
+		<servlet-class>SearchBook</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddCart</servlet-name>
+		<servlet-class>AddCart</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteCart</servlet-name>
+		<servlet-class>DeleteCart</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddBook</servlet-name>
+		<url-pattern>/AddBook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteBook</servlet-name>
+		<url-pattern>/DeleteBook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateBook</servlet-name>
+		<url-pattern>/UpdateBook</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>SearchBook</servlet-name>
+		<url-pattern>/SearchBook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddCart</servlet-name>
+		<url-pattern>/AddCart</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteCart</servlet-name>
+		<url-pattern>/DeleteCart</url-pattern>
+	</servlet-mapping>	
+
+
+</web-app>

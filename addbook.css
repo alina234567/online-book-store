@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --green: #ffad06;
+    --dark-color: #ff105f;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(book.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.full-page
+{
+    	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(book.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+.header .header-1{
+    background:#ff105f;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-1 .logo i{
+    color:#fff;
+}
+
+.header .header-1 .navbar{
+    text-align: center;
+}
+
+.header .header-1 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-1 .navbar a:hover{
+    background:var(--green);
+}
+
+.header .header-1.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+
+.para{
+    color:#fff;
+    font-size: 2rem;
+    line-height: 2;
+    padding:1rem 0;
+    text-align: center;
+    top: 120px;
+    position: absolute;
+}
+
+.form-box{
+    width: 360px;
+    height: 430px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(185, 185, 184);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 120px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s; 
+}
+
+.input-group{
+    top: 110px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    left: 35px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 12px 0;
+    margin: 5px 0;
+    border-left: 10;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    outline: none;
+    background: transparent;
+	bottom: 68px;
+}
+
+.submit-btn{
+    top: 20px;
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    position: relative;
+}
+
+#login{
+    left: 50px;
+}

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Login or Signup</title>
+    	<link rel="stylesheet" href="addbook.css">
+
+	<script>
+		function validate(){
+		var email= document.emailVerify.email.value;
+		if(email.indexOf('@')== -1){
+			alert("your email is incorrect");
+		}
+		if(email.indexOf('.')== -1){
+			alert("your email is incorrect");
+		}
+		}
+	</script>
+</head>
+
+<body>
+
+<div class="hero">
+	<div class="form-box">
+            	<div class="button-box">
+			<div id="btn"></div>
+                		<button type="button" class="toggle-btn"> <b> Login </b> </button>
+           		</div>
+
+		<form name ="emailVerify" action="Search" method="post" class="input-group">
+
+		<input type="text" name="uname" class="input-field" placeholder="UserName" required>
+                <input type="password" name="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" name="checkbox" class="check-box"> <span> Remember password </span>
+
+		<input type="submit" value="Login" onclick="validate()" class="submit-btn"><br><br>
+		Don't have an account? <a href="Signup.html"> Signup </a>
+
+		</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --green: #ffad06;
+    --dark-color: #ff105f;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+body{
+
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(book.jpg);
+	background-position: center center ;
+	background-size: cover;
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+.header .header-1{
+    background:#ff105f;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-1 .logo i{
+    color:#fff;
+}
+
+.header .header-1 .navbar{
+    text-align: center;
+}
+
+.header .header-1 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-1 .navbar a:hover{
+    background:var(--green);
+}
+
+.header .header-1.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+
+.para{
+    color:#fff;
+    font-size: 2rem;
+    line-height: 2;
+    padding:1rem 0;
+    text-align: center;
+    top: 120px;
+    position: absolute;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
+.image{
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.add-cart{
+	position: absolute;
+	widthy: 100%;
+	background-color: darkgrey;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+.btn{
+	top:120px;
+	color: #fff;
+	font-size: 2rem;
+	padding-top: 4rem;
+	
+}
+.booksection{
+	display: flex;
+	justify-content: center;
+}
+.width{
+	
+	width: 60%;
+}
+
+.wholeSection{
+	display: flex;
+	justify-content: space-between;
+}
+
+.booksec1 book-secSpace{
+	width: 80%;
+}

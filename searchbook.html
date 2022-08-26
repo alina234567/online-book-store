@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Book</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="addbook.css">
+    
+<body>
+
+<div class="full-page">
+    <header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> BookShelf </a>
+	<nav class="navbar">
+            <a href="addbook.html">Add Book</a>
+            <a href="updatebook.html">Update Book</a>
+            <a href="deletebook.html">Delete Book</a>
+	    <a href="searchbook.html">Search Book</a>
+            <a href="Signup.html">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" align="center">Search Book</button>
+            </div>
+
+	    <form id="searchbook" action="SearchBook" method="post" align="center" class="input-group">
+                <input type="text" name="dname" class="input-field" placeholder="BookName" required>
+                <input type="text" name="sno"class="input-field" placeholder="Serial No" required>
+                
+                <button type="submit" class="submit-btn" > Submit </button>
+            </form>
+</div>   
+</div>
+
+</body>
+</html>
